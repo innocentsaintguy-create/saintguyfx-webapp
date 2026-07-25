@@ -1,11 +1,13 @@
-function freeSignals() {
-    alert("📈 Free XAUUSD Signals will be available here.");
-}
+// XAU EDGE Dashboard
 
-function vipSignals() {
-    alert("💎 VIP Signals - Subscription required.");
-}
+let trend = document.getElementById("trend");
+let signal = document.getElementById("signal");
 
-function joinTelegram() {
-    window.open("https://t.me/xauusdgold01_bot", "_blank");
-}
+let trends = ["UPTREND 📈", "DOWNTREND 📉", "SIDEWAYS ➡️"];
+let signals = ["BUY 🟢", "SELL 🔴", "WAIT ⏳"];
+
+let randomTrend = trends[Math.floor(Math.random() * trends.length)];
+let randomSignal = signals[Math.floor(Math.random() * signals.length)];
+
+trend.innerHTML = randomTrend;
+signal.innerHTML = randomSignal;
