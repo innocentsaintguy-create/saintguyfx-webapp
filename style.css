@@ -50,5 +50,26 @@ header h1 {
 @media(max-width:600px){
   .dashboard {
     grid-template-columns: 1fr;
-  }
+  }.trade-card {
+  margin-top: 20px;
+  background: #172033;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.trade-card h3 {
+  text-align: center;
+  color: white;
+}
+
+.trade-card p {
+  font-size: 18px;
+  padding: 8px;
+  border-bottom: 1px solid #374151;
+}
+
+#tradeDirection {
+  font-weight: bold;
+}
 }
